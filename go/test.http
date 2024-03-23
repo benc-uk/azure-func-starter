@@ -1,0 +1,21 @@
+# =============================================================================================
+# VSCode REST Client Test File
+# https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+# =============================================================================================
+
+###########################################
+
+POST http://localhost:7071/helloFunction
+content-type: application/json
+
+{
+  "onToast": "Lemon curd"
+}
+
+###########################################
+
+GET http://localhost:7071/helloFunction
+
+###########################################
+
+GET http://localhost:7071/fractalFunction

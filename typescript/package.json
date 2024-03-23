@@ -1,0 +1,27 @@
+{
+  "name": "ts-azure-func",
+  "version": "1.0.0",
+  "description": "Starter template for Azure Functions with TypeScript",
+  "main": "dist/*.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "clean": "rm -rf ./dist",
+    "start": "func start",
+    "lint": "tsc && eslint . --ext .ts",
+    "format": "prettier -w ./src",
+    "check": "npm run lint && prettier -w ./src --check"
+  },
+  "type": "module",
+  "dependencies": {
+    "@azure/functions": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "18.x",
+    "azure-functions-core-tools": "^4.0.0",
+    "eslint": "^8.56.0",
+    "prettier": "^3.2.4",
+    "typescript": "^4.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.19.1"
+  }
+}

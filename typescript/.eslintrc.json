@@ -1,0 +1,37 @@
+{
+  // SDK level ESLint config
+  // Note, this is not a complete config, it will be merged with the root config when linting
+  "env": {
+    "es2022": true
+  },
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/strict"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    // Really standard rules that no one should disagree with
+    "no-var": "error",
+    "prefer-const": "error",
+    "no-undef": "error",
+    "no-duplicate-imports": "error",
+
+    // Prevents some common mistakes
+    "no-constructor-return": "error",
+    "no-promise-executor-return": "error",
+
+    // Style rules, these are fairly opinionated for modern ES6+ style JS
+    "camelcase": "error",
+    "prefer-template": "error",
+    "curly": "error",
+    "dot-notation": "error",
+    "func-style": ["error", "declaration", { "allowArrowFunctions": true }],
+    "object-shorthand": "error",
+
+    // Comments
+    "spaced-comment": ["error", "always"]
+  },
+  "ignorePatterns": ["**/dist/**/*", "**/node_modules/**/*"]
+}

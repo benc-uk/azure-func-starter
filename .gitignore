@@ -1,0 +1,11 @@
+dist/
+node_modules/
+local.settings.json
+.env
+bin/
+
+.venv/
+venv/
+
+.python_packages/
+__pycache__/
